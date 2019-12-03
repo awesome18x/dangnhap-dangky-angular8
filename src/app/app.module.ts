@@ -12,6 +12,9 @@ import { UserService } from './shared/user.service';
 import { LoginComponent } from './user/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
+import { MemberlistComponent } from './memberlist/memberlist.component';
+import { MessageComponent } from './message/message.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { AuthInterceptor } from './auth/auth.interceptor';
     UserComponent,
     RegisterComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    MemberlistComponent,
+    MessageComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

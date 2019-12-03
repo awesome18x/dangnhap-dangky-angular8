@@ -8,7 +8,7 @@ import { UserService } from '../shared/user.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  userDetails;
+  userDetails = {};
   constructor(private router: Router, private service: UserService) { }
 
   ngOnInit() {

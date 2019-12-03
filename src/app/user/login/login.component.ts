@@ -22,11 +22,11 @@ export class LoginComponent implements OnInit {
     this.service.login(form.value).subscribe(
       (res: any) => {
         localStorage.setItem('token', res.token);
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/home/members');
       },
       err => {
         if (err.status === 400) {
-          this.toastr.error('Invalid username or password', 'Authentication failed!');
+          this.toastr.error('Tài khoản hoặc mật khẩu không đúng.', 'Đăng nhập thất bại!');
         } else {
           console.log(err);
         }
