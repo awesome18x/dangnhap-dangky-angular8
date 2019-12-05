@@ -1,0 +1,9 @@
+.image{
+    height: 50%;
+    width:50%;
+    text-align: center;
+    position: absolute;
+}
+.container{
+    position: relative;
+}

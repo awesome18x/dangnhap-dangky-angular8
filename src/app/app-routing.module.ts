@@ -11,7 +11,7 @@ import { ListComponent } from './list/list.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/user/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/home/members', pathMatch: 'full' },
   {
     path: 'user',
     component: UserComponent,
@@ -23,7 +23,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
     children: [
       { path: 'members', component: MemberlistComponent },
       { path: 'messages', component: MessageComponent },
